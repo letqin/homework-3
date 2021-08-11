@@ -10,5 +10,13 @@ function writePassword() {
 
 }
 
+// generates random numbers
+console.log(Math.floor)(Math.random())
+
+// generates all possible options for password contents
+function randomLower() {
+
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
