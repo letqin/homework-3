@@ -35,9 +35,13 @@ function number() {
 };
 
 // generates first set of super special characters from charcode 161 - 172
-console.log(Math.floor(Math.random() * 12 ) + 161 );
+function superSpecialOne() {
+  return String.fromCharCode(Math.floor(Math.random() * 12 ) + 161 );
+};
 // generates second set of super special characters from charcode 174 - 255
-console.log(Math.floor(Math.random() * 82 ) + 174 );
+function superSpecialTwo() {
+  return String.fromCharCode(Math.floor(Math.random() * 82 ) + 174 );
+};
 
 console.log(lowercase());
 console.log(capital());
