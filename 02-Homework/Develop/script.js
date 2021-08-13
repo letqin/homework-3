@@ -45,12 +45,11 @@ function superSpecialTwo() {
 
 console.log(lowercase());
 console.log(capital());
+console.log(number());
 console.log(specialOne());
 console.log(specialTwo());
-console.log(number());
-console.log(());
-console.log(());
-console.log(());
+console.log(superSpecialOne());
+console.log(superSpecialTwo());
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
