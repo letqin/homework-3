@@ -17,29 +17,36 @@ function lowercase() {
 
 // capital letter generator, chooses 26 numbers from charcode 65
 function capital() {
-  console.log(Math.floor(Math.random() * 26 ) + 65 );
+  return String.fromCharCode(Math.floor(Math.random() * 26 ) + 65 );
 };
 
 // generates first set of special characters from charcode 33 - 47
-console.log(Math.floor(Math.random() * 15 ) + 33 );
+function specialOne() {
+  return String.fromCharCode(Math.floor(Math.random() * 15 ) + 33 );
+};
 // generates second set of special characters from charcode 58 - 96
-console.log(Math.floor(Math.random() * 39 ) + 58 );
+function specialTwo() {
+  return String.fromCharCode(Math.floor(Math.random() * 39 ) + 58 );
+};
 
 // generates a random number from charcode 48
-console.log(Math.floor(Math.random() * 10 ) + 48 );
+function number() {
+  return String.fromCharCode(Math.floor(Math.random() * 10 ) + 48 );
+};
 
-// generates second set of super special characters from charcode 161 - 172
+// generates first set of super special characters from charcode 161 - 172
 console.log(Math.floor(Math.random() * 12 ) + 161 );
 // generates second set of super special characters from charcode 174 - 255
 console.log(Math.floor(Math.random() * 82 ) + 174 );
 
 console.log(lowercase());
-console.log(capial());
+console.log(capital());
+console.log(specialOne());
+console.log(specialTwo());
+console.log(number());
 console.log(());
 console.log(());
 console.log(());
-console.log(());
-console.log(());
-console.log(());
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
