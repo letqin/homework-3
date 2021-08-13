@@ -20,6 +20,11 @@ function capital() {
   return String.fromCharCode(Math.floor(Math.random() * 26 ) + 65 );
 };
 
+// generates a random number from charcode 48
+function number() {
+  return String.fromCharCode(Math.floor(Math.random() * 10 ) + 48 );
+};
+
 // generates first set of special characters from charcode 33 - 47
 function specialOne() {
   return String.fromCharCode(Math.floor(Math.random() * 15 ) + 33 );
@@ -27,11 +32,6 @@ function specialOne() {
 // generates second set of special characters from charcode 58 - 96
 function specialTwo() {
   return String.fromCharCode(Math.floor(Math.random() * 39 ) + 58 );
-};
-
-// generates a random number from charcode 48
-function number() {
-  return String.fromCharCode(Math.floor(Math.random() * 10 ) + 48 );
 };
 
 // generates first set of super special characters from charcode 161 - 172
@@ -43,12 +43,19 @@ function superSpecialTwo() {
   return String.fromCharCode(Math.floor(Math.random() * 82 ) + 174 );
 };
 
+// console logging to check result of functions
 console.log(lowercase());
+
 console.log(capital());
+
 console.log(number());
+
 console.log(specialOne());
+
 console.log(specialTwo());
+
 console.log(superSpecialOne());
+
 console.log(superSpecialTwo());
 
 // Add event listener to generate button
