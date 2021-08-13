@@ -24,24 +24,9 @@ console.log(Math.floor(Math.random() * 39 ) + 58 );
 console.log(Math.floor(Math.random() * 10 ) + 48 );
 
 // generates second set of super special characters from charcode 161 - 172
-console.log(Math.floor(Math.random() * 26 ) +  );
+console.log(Math.floor(Math.random() * 12 ) + 161 );
 // generates second set of super special characters from charcode 174 - 255
-console.log(Math.floor(Math.random() * 26 ) + 97);
-
-// generates all possible options for password contents
-function randomLower() {
-  // generates lowercase letters
-  return String.fromCharCode(97)
-}
-
-// generates capital letters
-var capital
-// generates special characters
-var special
-// generates numbers
-var numbers
-// generates super special characters
-var verySpecial
+console.log(Math.floor(Math.random() * 82 ) + 174 );
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
