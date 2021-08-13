@@ -15,7 +15,16 @@ console.log(Math.floor)(Math.random())
 
 // generates all possible options for password contents
 function randomLower() {
-
+  // generates lowercase letters
+  var lowerCase
+  // generates capital letters
+  var capital
+  // generates special characters
+  var special
+  // generates numbers
+  var numbers
+  // generates super special characters
+  var verySpecial
 }
 
 // Add event listener to generate button
