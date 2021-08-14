@@ -2,12 +2,22 @@
 var generateBtn = document.querySelector("#generate");
 
 // function to create actual password with user selections
+const contents = {
+  lower = "abcdefghijklmnopqrstuvwxyz"
+  upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  special = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~"
+  number = "0123456789"
+};
+
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var passwordOptions = "";
+};
 
-  passwordText.value = password;
+var length = prompt("How long?")
 
+var lower = confirm("Lowercase letters?")
+if (lower) {
+  passwordOptions +- characters.lower
 }
 
 // Add event listener to generate button
