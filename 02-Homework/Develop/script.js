@@ -41,15 +41,5 @@ function writePassword() {
    
 };
 
-// console.log(howLong);
-// console.log(wantLower);
-// console.log(wantUpper);
-// console.log(wantNum);
-// console.log(wantSymbol);
-console.log();
-console.log();
-console.log();
-console.log();
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
