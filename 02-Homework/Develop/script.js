@@ -39,13 +39,15 @@ function writePassword() {
     passwordOptions += contents.wantSymbol
   };
    
-};
 
-// variable for final password result
-var passwordFinal = ""
-// for loop which generates a random password with the specified parameters
-for (let i = 0; i < length; i++) {
-  passwordFinal += passwordSelection[Math.floor(Math.random()*passwordSelection.length)]
-}
+
+  // variable for final password result
+  var passwordFinal = ""
+  // for loop which generates a random password with the specified parameters
+  for (let i = 0; i < length; i++) {
+    passwordFinal += passwordOptions[Math.floor(Math.random()*passwordOptions.howLong)]
+  };
+  document.getElementById("password").innerHTML = passwordFinal;
+};
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
