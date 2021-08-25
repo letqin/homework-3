@@ -5,15 +5,15 @@ var generateBtn = document.querySelector("#generate");
 const contents = {
   lower: "abcdefghijklmnopqrstuvwxyz",
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  special: "!#$%&'()*+-./:;<=>?@[]^_`{|}~",
-  number: "0123456789"
+  number: "0123456789",
+  special: "!#$%&'()*+-./:;<=>?@[]^_`{|}~"
 };
 
 function writePassword() {
     var passwordOptions = "";
 
   // ask how long to make password
-  var howLong = prompt("How long?");
+  var length = prompt("How long?");
 
   // ask if there should be lowercase letters
   var wantLower = confirm("Do you want lowercase letters?");
@@ -36,7 +36,7 @@ function writePassword() {
   // ask if there should be symbols
   var wantSymbol = confirm("Do you want symbols?");
   if (wantSymbol) {
-    passwordOptions += contents.wantSymbol
+    passwordOptions += contents.special
   };
    
 
@@ -45,7 +45,7 @@ function writePassword() {
   var passwordFinal = ""
   // for loop which generates a random password with the specified parameters
   for (let i = 0; i < length; i++) {
-    passwordFinal += passwordOptions[Math.floor(Math.random()*passwordOptions.howLong)]
+    passwordFinal += passwordOptions[Math.floor(Math.random()*passwordOptions.length)]
   };
   document.getElementById("password").innerHTML = passwordFinal;
 };
