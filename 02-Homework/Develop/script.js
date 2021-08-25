@@ -9,11 +9,12 @@ const contents = {
   special: "!#$%&'()*+-./:;<=>?@[]^_`{|}~"
 };
 
+// function to generate password result
 function writePassword() {
     var passwordOptions = "";
 
   // ask how long to make password
-  var length = prompt("How long?");
+  var length = prompt("How long? (please enter a number in this field)");
 
   // ask if there should be lowercase letters
   var wantLower = confirm("Do you want lowercase letters?");
@@ -49,5 +50,6 @@ function writePassword() {
   };
   document.getElementById("password").innerHTML = passwordFinal;
 };
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
