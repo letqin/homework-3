@@ -13,7 +13,7 @@ function writePassword() {
     var passwordOptions = "";
 
   // ask how long to make password
-  var howLong = prompt("How long?");
+  // var howLong = prompt("How long?");
 
   // ask if there should be lowercase letters
   var wantLower = confirm("Do you want lowercase letters?");
@@ -24,22 +24,28 @@ function writePassword() {
   // ask if there should be capital letters
   var wantUpper = confirm("Do you want capital letters?");
   if (wantUpper) {
-    passwordOptions +- characters.upper
+    passwordOptions +- contents.upper
   };
   
   // ask if there should be numbers
   var wantNum = confirm("Do you want to include numbers?");
+  if (wantNum) {
+    passwordOptions +- contents.number
+  };
 
   // ask if there should be symbols
   var wantSymbol = confirm("Do you want symbols?");
+  if (wantSymbol) {
+    passwordOptions +- contents.wantSymbol
+  };
    
 };
 
-console.log(howLong);
-console.log(wantLower);
-console.log(wantUpper);
-console.log(wantNum);
-console.log(wantSymbol);
+// console.log(howLong);
+// console.log(wantLower);
+// console.log(wantUpper);
+// console.log(wantNum);
+// console.log(wantSymbol);
 console.log();
 console.log();
 console.log();
