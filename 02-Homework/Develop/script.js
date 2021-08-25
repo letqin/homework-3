@@ -1,7 +1,7 @@
 // generates a variable for generateBtn
 var generateBtn = document.querySelector("#generate");
 
-// function to create actual password with user selections
+// declaring variables for the selections of the password generator
 const contents = {
   lower: "abcdefghijklmnopqrstuvwxyz",
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -48,6 +48,7 @@ function writePassword() {
   for (let i = 0; i < length; i++) {
     passwordFinal += passwordOptions[Math.floor(Math.random()*passwordOptions.length)]
   };
+  // replaces the placeholder text with the generated password
   document.getElementById("password").innerHTML = passwordFinal;
 };
 
