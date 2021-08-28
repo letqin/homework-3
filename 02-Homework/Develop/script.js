@@ -39,8 +39,6 @@ function writePassword() {
   if (wantSymbol) {
     passwordOptions += contents.special
   };
-   
-
 
   // variable for final password result
   var passwordFinal = ""
@@ -51,9 +49,6 @@ function writePassword() {
   // replaces the placeholder text with the generated password
   document.getElementById("password").innerHTML = passwordFinal;
 
-  // if (passwordFinal === undefined) {
-  //   window.alert("error: please try another combination of choices")
-  // };
 };
 
 // Add event listener to generate button
