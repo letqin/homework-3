@@ -10,4 +10,4 @@ This required a lot of rethinking and I had initially overcomplicated the projec
 
 The script starts off with declaring the variables under the generate button at the top, which was part of the code the previous dev had added in. Next was creating the function to write the password with the selected password options. The password generated is the specified length and will only include the characters that were previously specified.
 
-![Screenshot of Application](Assets\password-generator.png)
+![Screenshot 2021-08-25 at 21-23-20 Password Generator](https://user-images.githubusercontent.com/86627655/131207732-a6f7f413-7d30-4cdc-ac58-baad501bf54f.png)
